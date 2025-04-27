@@ -1,0 +1,17 @@
+body{
+  /*This style below will be inherited*/
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 1500px;
+  padding-top: 80px; /*POSITION FIXED*/
+  padding-left: 100px; /* SIDEBAR*/
+  padding-right: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
+
+p{
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
