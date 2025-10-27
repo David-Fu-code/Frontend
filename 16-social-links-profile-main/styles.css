@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-yellow: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+
+  --dark-charcoal: hsl(0, 0%, 20%);
+  --eerie-black: hsl(0, 0%, 12%);
+  --chinese-black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--chinese-black);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+background-color: var(--eerie-black);
+width: 300px;
+padding: 20px;
+text-align: center;
+border-radius: 1rem;
+}
+
+img {
+  border-radius: 50%;
+  width: 5rem;
+  margin-top: 16px;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 22px;
+  margin-top: .75rem;
+}
+
+span {
+  color: var(--green-yellow);
+  margin: 5px auto 15px ;
+  font-size: 14px;
+  display: block;
+}
+
+p {
+  color: hsl(0, 3%, 81%);
+  font-size: 14px;
+}
+
+.links a {
+  display: block;
+  margin: 20px 0 10px;
+  background-color: var(--dark-charcoal);
+  color: var(--white);
+  text-align: center;
+  height: 35px;
+  align-content: center;
+  font-family: 'Inter';
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  background-color: var(--green-yellow);
+  color: var(--chinese-black);
+}
+
+.attribution {
+  margin-top: 2rem;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+
+
