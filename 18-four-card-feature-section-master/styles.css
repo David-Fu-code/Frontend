@@ -1,0 +1,143 @@
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Make width/height include padding and border */
+}
+
+/* -------------------- COLORS / VARIABLES -------------------- */
+:root {
+  --Fire-opal: hsl(0, 78%, 62%);
+  --Medium-Turquoise: hsl(180, 62%, 55%);
+  --Pastel-Orange: hsl(34, 97%, 64%);
+  --Blue-Jeans: hsl(212, 86%, 64%);
+  --Independence: hsl(234, 12%, 34%);
+  --Nickel: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* -------------------- BODY -------------------- */
+body {
+  display: flex;
+  justify-content: center; /* Center container horizontally */
+  align-items: center;     /* Center container vertically */
+  background-color: var(--White);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;       /* Full viewport height */
+  padding: 2rem;
+}
+
+/* -------------------- TECHNOLOGY SECTION -------------------- */
+.technology {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.technology h2 {
+  font-weight: 300;         /* Light font weight for heading */
+  color: var(--Nickel);
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.technology h2 span {
+  font-weight: 700;         /* Bold span for emphasis */
+  color: var(--Independence);
+}
+
+.technology .description {
+  font-size: 15px;
+  margin: 15px auto 40px;   /* Top, horizontal, bottom spacing */
+  max-width: 500px;
+  color: var(--Independence);
+}
+
+/* -------------------- CARDS CONTAINER -------------------- */
+.cards {
+  margin-top: 70px;         /* Space from section above */
+  max-width: 1200px;        /* Limit container width */
+}
+
+/* -------------------- CARD -------------------- */
+.cards .card {
+  background-color: var(--White);
+  padding: 29px 25px;       /* Inner spacing */
+  width: 100%;              /* Responsive width */
+  max-width: 352px;         /* Limit card width */
+  margin: 0 auto 25px auto; /* Center horizontally + bottom spacing */
+  border-radius: .5rem;     /* Rounded corners */
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-top: 4px solid transparent;          /* Placeholder for color border */
+  transition: transform 0.3s ease;            /* Smooth hover animation */
+}
+
+/* -------------------- CARD HOVER -------------------- */
+.card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+/* -------------------- BORDER COLORS -------------------- */
+.cards .card:nth-last-of-type(1) { border-color: var(--Pastel-Orange); }
+.cards .card:nth-last-of-type(2) { border-color: var(--Blue-Jeans); }
+.cards .card:nth-last-of-type(3) { border-color: var(--Fire-opal); }
+.cards .card:nth-last-of-type(4) { border-color: var(--Medium-Turquoise); }
+
+/* -------------------- CARD TEXT -------------------- */
+.cards .card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cards p {
+  color: var(--Nickel);
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  margin: 12px 0 36px 0; /* Top and bottom spacing */
+}
+
+/* -------------------- CARD IMAGE -------------------- */
+.cards .card img {
+  width: 50px;
+  display: block;
+  margin-left: auto;        /* Align image to the right */
+}
+
+.card .image {
+  text-align: right;        /* Optional container alignment */
+}
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 352px); /* 2-column layout on tablets */
+    column-gap: 25px;                        /* Space between columns */
+    justify-content: center;                 /* Center grid horizontally */
+  }
+}
+
+/* -------------------- DESKTOP LAYOUT (CROSS) -------------------- */
+@media(min-width: 1200px) {
+    .cards {
+        display: flex;                        /* Switch to flex layout */
+        flex-direction: row;                   /* Row layout */
+        flex-wrap: wrap;                       /* Allow wrapping if needed */
+        align-items: flex-start;               /* Align items at top */
+        gap: 0;                                /* Remove automatic gap */
+    }
+    .cards .card {
+        margin-left: 25px;                     /* Space between cards */
+        margin-right: 0;
+    }
+
+    /* Move first and last card down visually to create a “cross” layout */
+    .cards .cyan {
+        transform: translateY(50%);
+    }
+    
+    .cards .blue {
+        transform: translateY(50%);
+    }
+}
