@@ -1,0 +1,445 @@
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- ROOT COLORS -------------------- */
+:root {
+  --Green-500: hsl(171, 66%, 44%);
+  --Blue-100: hsl(233, 100%, 69%);
+  --Gray-700: hsl(210, 10%, 33%);
+  --Gray-500: hsl(201, 11%, 66%);
+}
+
+/* -------------------- TYPOGRAPHY -------------------- */
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.xl-text {
+  font-size: 2rem;
+  color: var(--Gray-700);
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.lg-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.md-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.sm-text {
+  font-size: 0.9rem;
+  color: var(--Gray-500);
+}
+
+.xl-text:hover, .lg-text:hover {
+  transform: scale(1.02);
+  color: var(--Blue-100);
+}
+
+/* -------------------- LINKS -------------------- */
+a {
+  text-decoration: none;
+  color: var(--Blue-100);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--Green-500);
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  padding: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/bg-header-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background 0.4s ease;
+}
+
+header img {
+  width: 5rem;
+  margin: 70px 10px 10px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------- INTRO -------------------- */
+.intro {
+  text-align: center;
+  padding: 10px 0;
+  width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.intro:hover {
+  transform: scale(1.01);
+}
+
+/* -------------------- BUTTONS -------------------- */
+.action_button {
+  margin-top: 30px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.action_button button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.action_button .IOSbutton {
+  background-color: var(--Green-500);
+}
+
+.action_button .IOSbutton:hover {
+  background-color: hsl(171, 66%, 48%);
+  box-shadow: 0 2px 8px var(--Green-500);
+  transform: translateY(-2px);
+}
+
+.action_button .Macbutton {
+  background-color: var(--Blue-100);
+}
+
+.action_button .Macbutton:hover {
+  background-color: hsl(233, 100%, 75%);
+  box-shadow: 0 2px 8px var(--Blue-100);
+  transform: translateY(-2px);
+}
+
+/* Active (click/tap) feedback */
+.action_button button:active {
+  transform: scale(0.96);
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.one, .three, .five {
+  width: 550px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.one:hover, .three:hover, .five:hover {
+  transform: scale(1.01);
+}
+
+/* -------------------- SECTION TWO -------------------- */
+.two {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 2rem;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.two img {
+  width: 50%;
+  max-width: 600px;     
+  height: auto;
+  display: block; 
+}
+
+.two img:hover {
+  transform: scale(1.05);
+}
+
+.two div {
+  padding: 20px;
+  width: 350px;
+}
+
+.two div .md-text {
+  margin-bottom: 5px;
+}
+
+/* -------------------- SECTION TWO -------------------- */
+.three img {
+  width: 120%;
+  margin-top: 20px;
+}
+
+.three div {
+  margin-bottom: 40px;
+}
+
+/* -------------------- SECTION FOUR -------------------- */
+.four .icons-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.four .icons-info div {
+  width: 26%;
+  margin: 0 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.four .icons-info div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.four .icons-info div img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.four .icons-info div p {
+  margin-top: 10px;
+  width: 300px;
+}
+
+.four .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 30px;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.four .icons img {
+  width: 120px;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.four .icons img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* -------------------- SECTION FIVE -------------------- */
+
+.five {
+  margin: 20px 0 100px ;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  margin-top: 80px;
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer .foot {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  padding-left: 50px;
+}
+
+footer .foot .logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 70px;
+  transition: transform 0.3s ease;
+}
+
+footer .foot .logo:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.foot ul {
+  list-style: none;
+  max-width: 400px;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+footer .foot .social_link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+footer .foot .social_link a:hover {
+  transform: scale(1.1);
+}
+
+footer .attribution {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--Gray-500);
+}
+
+/* -------------------- MEDIA QUERY (Mobile ≤ 768px) -------------------- */
+@media (max-width: 768px) {
+
+  header {
+    padding: 30px 20px;
+    background: url(./images/bg-header-mobile.png);
+    background-size: cover;
+  }
+
+  header img {
+    width: 4rem;
+    margin: 40px 0 10px;
+  }
+
+  .intro {
+    width: 90%;
+    padding: 0 1rem;
+  }
+
+  .xl-text {
+    font-size: 1.6rem;
+  }
+
+  .lg-text {
+    font-size: 1.2rem;
+  }
+
+  .md-text {
+    font-size: 1rem;
+  }
+
+  .sm-text {
+    font-size: 0.85rem;
+  }
+
+  .action_button {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .action_button button {
+    width: 80%;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  .one, .three, .five {
+    width: 90%;
+  }
+
+  .two {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .two img {
+    width: 90%;
+  }
+
+  .two div {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .three img {
+    width: 100%;
+  }
+
+  .four .icons-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 60px;
+  }
+
+  .four .icons-info div {
+    width: 90%;
+    margin: 0;
+  }
+
+  .four .icons-info div p {
+    width: 100%;
+  }
+
+  .four .icons {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 30px 0;
+  }
+
+  .four .icons img {
+    width: 100px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  footer .foot {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+    padding: 0;
+  }
+
+  footer .foot .logo {
+    margin: 0;
+  }
+
+  .foot ul {
+    text-align: center;
+  }
+
+  ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer .foot .social_link {
+    justify-content: center;
+  }
+
+  footer .attribution {
+    font-size: 0.9rem;
+    margin: 30px 0;
+  }
+}
