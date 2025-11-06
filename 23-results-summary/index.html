@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Ensures correct text encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes layout responsive on mobile devices -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> <!-- Sets a small browser tab icon -->
+
+  <link rel="stylesheet" href="style.css"> <!-- Links external CSS file -->
+
+  <!-- Google Fonts preconnection for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Imports multiple font families from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title> <!-- Title shown on browser tab -->
+
+  <!-- Inline styles for footer attribution -->
+  <style>
+    .attribution { font-size: 18px; text-align: center; margin-top: 50px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main> <!-- Main content area of the page -->
+    <div class="container"> <!-- Main wrapper for both sections -->
+      
+      <div class="result"> <!-- Left section showing the user's result -->
+        <h3 class="lg-text">Your Result</h3>
+
+        <div class="score"> <!-- Circular area showing numeric score -->
+          <p>76</p>
+          <b>of 100</b>
+        </div>
+
+        <div class="text"> <!-- Descriptive result text -->
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <div class="summary"> <!-- Right section showing score breakdown -->
+        <h3>Summary</h3>
+
+        <div class="stats"> <!-- Container for individual category stats -->
+          
+          <!-- Reaction stat -->
+          <div class="row">
+            <div class="badge">
+              <img src="assets/images/icon-reaction.svg" alt="reaction icon">
+              <b>Reaction</b>
+            </div>
+            <p><b>80</b> / 100</p>
+          </div>
+
+          <!-- Memory stat -->
+          <div class="row">
+            <div class="badge">
+              <img src="assets/images/icon-memory.svg" alt="memory icon">
+              <b>Memory</b>
+            </div>
+            <p><b>92</b> / 100</p>
+          </div>
+
+          <!-- Verbal stat -->
+          <div class="row">
+            <div class="badge">
+              <img src="assets/images/icon-verbal.svg" alt="verbal icon">
+              <b>Verbal</b>
+            </div>
+            <p><b>61</b> / 100</p>
+          </div>
+
+          <!-- Visual stat -->
+          <div class="row">
+            <div class="badge">
+              <img src="assets/images/icon-visual.svg" alt="visual icon">
+              <b>Visual</b>
+            </div>
+            <p><b>72</b> / 100</p>
+          </div>
+        </div>
+        
+        <button class="button">Continue</button> <!-- Action button -->
+      </div>
+    </div>
+    
+    <footer> <!-- Footer section with credits -->
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">David Fu</a>.
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
