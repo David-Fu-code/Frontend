@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon and stylesheet -->
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Device Shop Checkout | devChallenges.io</title>
+
+    <!-- Footer text styling -->
+    <style>
+      .author-info {font-size: 18px; text-align: center; margin-top: 16px; color: rgb(55, 65, 81);}
+      .author-info a {text-decoration: none;}
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <!-- Page title and total items -->
+      <div class="title">
+        <h2>Checkout</h2>
+        <p>3 items</p>
+      </div>
+
+      <div class="container">
+        <!-- LEFT SIDE: Cart summary -->
+        <section class="purchase">
+
+          <!-- Single cart item -->
+          <div class="cart-item">
+            <div class="product-image">
+              <img src="resources/Gold.png" alt="iPhone 12 Pro" />
+            </div>
+            <div class="product-info">
+              <h3>iPhone 12 Pro</h3>
+              <p class="color">Golden</p>
+              <p class="quantity">x 1</p>
+            </div>
+            <div class="product-price">
+              <p class="price">$999.00</p>
+              <span class="remove">×</span> <!-- Remove item button -->
+            </div>
+          </div>
+
+          <!-- Repeat for each product -->
+          <div class="cart-item">
+            <div class="product-image">
+              <img src="resources/Apple-watch.png" alt="Apple Watch" />
+            </div>
+            <div class="product-info">
+              <h3>Apple Watch</h3>
+              <p class="color">Blue</p>
+              <p class="quantity">x 1</p>
+            </div>
+            <div class="product-price">
+              <p class="price">$399.00</p>
+              <span class="remove">×</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="product-image">
+              <img src="resources/iMac.png" alt="iMac" />
+            </div>
+            <div class="product-info">
+              <h3>iMac</h3>
+              <p class="color">Green</p>
+              <p class="quantity">x 1</p>
+            </div>
+            <div class="product-price">
+              <p class="price">$1199.00</p>
+              <span class="remove">×</span>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Coupon input + price summary -->
+          <div class="product-total">
+            <!-- Coupon area -->
+            <div class="coupon-container">
+              <input type="text" placeholder="Enter coupon code" class="coupon-input">
+              <button class="coupon-btn">Apply Cuppon</button>
+            </div>
+
+            <!-- Subtotal, tax, and total -->
+            <div class="total-price">
+              <div class="name-price">
+                <h3>Sub total</h3>
+                <p class="price">$2597.00</p>
+              </div>
+
+              <div class="name-price">
+                <h3>Tax</h3>
+                <p class="price">$623.28</p>
+              </div>
+
+              <div class="name-price">
+                <h3 class="total">Total</h3>
+                <p class="price-total">$3220.28</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT SIDE: Contact form -->
+        <section class="contact-form">
+          <h3>Contact Information</h3>
+
+          <!-- Name field -->
+          <label for="name">First & Last name</label>
+          <input type="text" id="name" placeholder="Enter first & last name">
+
+          <!-- Email field -->
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter email address">
+
+          <!-- Country and postal code row -->
+          <div class="row">
+            <div class="field">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="">Select Country</option>
+                <option value="finland">Finland</option>
+                <option value="spain">Spain</option>
+                <option value="ireland">Ireland</option>
+              </select>
+            </div>
+            
+            <div class="field">
+              <label for="postal">Postal Code</label>
+              <input type="text" id="postal" placeholder="00270">
+            </div>
+          </div>
+
+          <!-- Continue button -->
+          <button class="continue-btn">Continue</button>
+        </section>
+      </div>
+
+      <!-- Footer credit -->
+      <footer>
+        <div class="author-info">
+          Coded by <a href="#">David Fu</a> | Challenge by
+          <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
