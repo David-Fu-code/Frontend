@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Weather app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 18px; text-align: center; margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <section class="app">
+      <!-- SECTION 1 : TITLE-->
+      <div class="app-title">
+        <img src="assets/images/logo.svg" alt="logo">
+
+        <div class="row">
+            <div class="field">
+              <select name="country" id="country">
+                <option value="">Units</option>
+                <option value="finland">Finland</option>
+                <option value="spain">Spain</option>
+                <option value="ireland">Ireland</option>
+              </select>
+            </div>
+        </div>
+      </div>
+
+      <h1>How's the sky looking today?</h1>
+
+      <div class="search">
+        <input type="text" placeholder="Search for a place..." class="search-input">
+        <button class="search-btn">Search</button>
+      </div>
+    </section>
+
+
+    <div class="app-container">
+      <!-- SECTION 2 APP CONTAINER RIGTH SIDE-->
+      <section class="temp-container">
+        
+        <!-- TEMPERATURE CITY,DATE-->
+        <div class="temp-city">
+          <div>
+            <h2>Berlin, Germany</h2>
+            <p class="date">Tuesday, Aug 5 2025</p>
+          </div>
+          <p>68º</p>
+        </div>
+
+        <!-- TEMPERATURE DESCRIPTION -->
+        <div class="temp-desc">
+          <div>
+            <h3 class="md-text">Feels Like</h3>
+            <p>64º</p>
+          </div>
+          <div>
+            <h3 class="md-text">Humidity</h3>
+            <p>46%</p>
+          </div>
+          <div>
+            <h3 class="md-text">Wind</h3>
+            <p>9 mph</p>
+          </div>
+          <div>
+            <h3 class="md-text">Precipitation</h3>
+            <p>0 in</p>
+          </div>
+        </div>
+
+        <!-- TEMPERATURE DAILY FORECAST-->
+        <div class="temp-forecast">
+          <h4>Daily Forecast</h4>
+          <div class="forecast">
+            <div>
+              <p class="temp-day">Tue</p>
+              <img src="assets/images/icon-rain.webp" alt="">
+              <div class="temp-max">
+                <p>68º</p>
+                <span>57º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Wed</p>
+              <img src="assets/images/icon-drizzle.webp" alt="">
+              <div class="temp-max">
+                <p>70º</p>
+                <span>59º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Thu</p>
+              <img src="assets/images/icon-sunny.webp" alt="">
+              <div class="temp-max">
+                <p>75º</p>
+                <span>57º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Fri</p>
+              <img src="assets/images/icon-partly-cloudy.webp" alt="">
+              <div class="temp-max">
+                <p>77º</p>
+                <span>55º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Sat</p>
+              <img src="assets/images/icon-storm.webp" alt="">
+              <div class="temp-max">
+                <p>70º</p>
+                <span>59º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Sun</p>
+              <img src="assets/images/icon-snow.webp" alt="">
+              <div class="temp-max">
+                <p>77º</p>
+                <span>61º</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="temp-day">Mon</p>
+              <img src="assets/images/icon-fog.webp" alt="">
+              <div class="temp-max">
+                <p>75º</p>
+                <span>59º</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 LEFT SIDE: TEMPERATURE HOURLY FORECAST-->
+      <section class="temperature-perday">
+        <div class="hourly-forecast">
+          <h4>Hourly forecast</h4>
+          <div class="row">
+            <select name="day" id="day">
+              <option value="">Tuesday</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hourly-temp">
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-overcast.webp" alt="overcast">
+              <p>3 PM</p>
+            </div>
+            <span>68º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-partly-cloudy.webp" alt="partly clody">
+              <p>4 PM</p>
+            </div>
+            <span>68º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-sunny.webp" alt="sunny">
+              <p>5 PM</p>
+            </div>
+            <span>68º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-overcast.webp" alt="overcast">
+              <p>6 PM</p>
+            </div>
+            <span>66º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-snow.webp" alt="snow">
+              <p>7 PM</p>
+            </div>
+            <span>66º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-fog.webp" alt="fog">
+              <p>8 PM</p>
+            </div>
+            <span>64º</span>
+          </div>
+          
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-snow.webp" alt="snow">
+              <p>9 PM</p>
+            </div>
+            <span>63º</span>
+          </div>
+
+          <div>
+            <div class="hourly-icon">
+              <img src="assets/images/icon-overcast.webp" alt="overcast">
+              <p>10 PM</p>
+            </div>
+            <span>63º</span>
+          </div>
+        </div>
+      </section>
+    </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="#">David Fu</a>.
+      </div>
+  </div>
+</body>
+</html>
+

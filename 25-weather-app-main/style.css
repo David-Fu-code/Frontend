@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Neutral-900: hsl(243, 96%, 9%);
+  --Neutral-800: hsl(243, 27%, 20%);
+  --Neutral-700: hsl(243, 23%, 24%);
+  --Neutral-600: hsl(243, 23%, 30%);
+  --Neutral-300: hsl(240, 6%, 70%);
+  --Neutral-200: hsl(250, 6%, 84%);
+  --Neutral-0: hsl(0, 0%, 100%);
+
+  --Orange-500: hsl(28, 100%, 52%);
+
+  --Blue-500: hsl(233, 67%, 56%);
+  --Blue-700: hsl(248, 70%, 36%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'DM Sans', 'Bricolage Grotesque', sans-serif;
+  display: flex;
+  background: linear-gradient(to bottom, var(--Neutral-900), var(--Neutral-800));
+  font-size: 18px;
+  color: white;
+  margin: 3rem 4rem;
+  width: 900px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+img {
+  display: block;
+  width: 14%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.app .app-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app .app-title img {
+  width: 20%;
+}
+
+.app .app-title .row select{
+  padding: .3rem .5rem;
+  background-color: var(--Neutral-700);
+  color: white;
+  font-size: .8rem;
+  border-radius: .2rem;
+  border: none;
+}
+
+.app h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+} 
+
+
+/* -------------------- SEARCH -------------------- */
+.app .search input {
+  width: 400px;
+  padding: .7rem;
+  background-color: var(--Neutral-800);
+  border: 1px solid #807e7e;
+  border-radius: .3rem;
+  font-size: .9rem;
+  font-weight: 600;
+  background-image: url("assets/images/icon-search.svg"); /* tu imagen */
+  background-repeat: no-repeat;
+  background-size: 18px; 
+  background-position: 10px center; 
+  padding-left: 35px ;
+}
+
+.app .search .search-btn {
+  padding: .9rem 1.2rem;
+  border-radius: .5rem;
+  background-color: var(--Blue-500);
+  border: none;
+  color: white;
+  letter-spacing: .5px;
+  font-weight: 600;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.app .search .search-btn:hover {
+  background-color: hsl(233, 67%, 46%);
+}
+
+/* -------------------- APP CONTAINER -------------------- */
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  width: 900px;
+}
+
+/* -------------------- TEMPERATURE CONTAINER -------------------- */
+
+.app-container .temp-container {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 70%;
+}
+
+/* -------------------- TEMPERATURE NAME -------------------- */
+.temp-container .temp-city {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: url(assets/images/bg-today-large.svg) no-repeat;
+  background-size: contain;
+  border-radius: .5rem;
+  height: 220px;
+  padding: 1.5rem;
+}
+
+.temp-container .temp-city h2 {
+  font-size: 1.3rem;
+}
+
+.temp-container .temp-city .date {
+  font-size: .8rem;
+  color: var(--Neutral-200);
+  text-align: left;
+}
+
+.temp-container .temp-city p {
+  font-size: 4rem;
+}
+
+/* -------------------- TEMPERATURE DESCRIPTION -------------------- */
+.temp-container .temp-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temp-container .temp-desc div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Neutral-800);
+  border-radius: .7rem;
+  padding: 1rem;
+  height: 90px;
+  width: 140px;
+}
+
+.temp-container .temp-desc h3 {
+  font-size: .8rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.temp-container .temp-desc p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* -------------------- TEMPERATURE DAILY FORECAST -------------------- */
+
+.temp-container .temp-forecast {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.temp-forecast h4 {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.temp-forecast .forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.temp-forecast .forecast div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Neutral-800);
+  border-radius: .5rem;
+  width: 77px;
+  height: 130px;
+  padding: 1rem;
+}
+
+.temp-forecast .forecast div .temp-day {
+  font-size: .8rem;
+  color: var(--Neutral-400);
+  margin-top: 1rem;
+}
+
+.temp-forecast .forecast div img {
+  width: 50px;
+}
+
+.forecast div .temp-max {
+  display: flex;
+  flex-direction: row;
+  font-size: .7rem;
+  gap: 1rem;
+}
+
+.forecast div .temp-max span {
+  color: var(--Neutral-300);
+}
+
+/* -------------------- TEMPERATURE PER DAY -------------------- */
+.temperature-perday {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Neutral-800);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; 
+}
+
+.hourly-forecast h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.hourly-forecast .row select{
+  padding: .4rem .5rem;
+  background-color: var(--Neutral-600);
+  color: white;
+  font-size: .8rem;
+  border-radius: .2rem;
+  border: none;
+}
+
+.hourly-temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hourly-temp div {
+  display: flex;
+  align-items: center;
+  background: var(--Neutral-700);
+  border-radius: .3rem;
+  padding: .2rem;
+}
+
+.hourly-temp div .hourly-icon {
+  gap: .5rem;
+  font-size: .9rem;
+}
+
+.hourly-temp div span {
+  font-size: .8rem;
+  margin-right: 1rem;
+}
