@@ -41,3 +41,16 @@ It allows users to generate random color palettes and easily **copy hex color co
 
 ## 📂 Project Structure
 
+📁 ColorPaletteGenerator
+│
+├── index.html # Main HTML structure
+├── style.css # Styling for the app
+├── script.js # JavaScript logic (palette generation + copy)
+└── resources/ # Images or icons (optional)
+
+## Future Improvements
+
+- 🎨 Save favorite palettes
+- 💾 Export palette as image or JSON
+- 🌈 Generate gradient combinations
+- 🧭 Add light/dark mode
