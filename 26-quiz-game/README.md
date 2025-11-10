@@ -43,4 +43,4 @@ Users can start a quiz, select answers, track their score and progress, and see 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/quiz-app.git
+   git clone https://github.com/David-Fu-code/quiz-app.git
