@@ -19,15 +19,15 @@ Users can start a quiz, select answers, track their score and progress, and see 
 ## 🖼️ Screenshots
 
 ### 🟢 Start Screen  
-![Start Screen](./screenshots/start-screen.png)
+![Start Screen](./screenshots/start-screen.PNG)
 
 ### 🟣 Quiz Screen  
-![Quiz Screen](./screenshots/quiz-screen-1.png)
-![Quiz Screen](./screenshots/quiz-screen-2.png)
-![Quiz Screen](./screenshots/quiz-screen-3.png)
+![Quiz Screen](./screenshots/quiz-screen-1.PNG)
+![Quiz Screen](./screenshots/quiz-screen-2.PNG)
+![Quiz Screen](./screenshots/quiz-screen-3.PNG)
 
 ### 🔵 Result Screen  
-![Result Screen](./screenshots/result-screen.png)
+![Result Screen](./screenshots/result-screen.PNG)
 
 ---
 
